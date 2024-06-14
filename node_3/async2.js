@@ -16,14 +16,14 @@ const f3 = () => {
     return 3;
 }
 
-co  nsole.log(`f1() >> '`, f1()); // Promise {     1 }
+console.log(`f1() >> '`, f1()); // Promise {     1 }
 console.log(`f2() >> '`, f2()); // Promise { <pending> }
 
-f1().then(function (re  sult) {
+f1().then(function (result) {
     console.log(result);
 })
 
-f1().then(function (re  sult) {
+f1().then(function (result) {
     console.log(result);
 })
 
