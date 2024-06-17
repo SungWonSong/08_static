@@ -36,4 +36,27 @@ async function exec() {
 
 exec();
 
+// ------------------------------
+function delay(ms) {
+    return new Promise(resolve => 
+        setTimeout(resolve, ms))
+}
 
+async function changeBackgroundColors() {
+    await delay(1000)
+    document.body.style.backgroundColor = 'red'
+
+    await delay(1000)
+    document.body.style.backgroundColor = 'orange'
+
+    await delay(1000)
+    document.body.style.backgroundColor = 'yellow'
+
+    await delay(1000)
+    document.body.style.backgroundColor = 'green'
+
+    await delay(1000)
+    document.body.style.backgroundColor = 'blue'
+}
+
+changeBackgroundColors();
